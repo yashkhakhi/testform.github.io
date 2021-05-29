@@ -9,7 +9,7 @@ $webmaster_email = "khakhiyash@gmail.com";
 This bit sets the URLs of the supporting pages.
 If you change the names of any of the pages, you will need to change the values here.
 */
-$feedback_page = "feedback_form.html";
+$feedback_page = "index.html";
 $error_page = "error_message.html";
 $thankyou_page = "thank_you.html";
 
@@ -50,7 +50,7 @@ function isInjected($str) {
 
 // If the user tries to access this script directly, redirect them to the feedback form,
 if (!isset($_REQUEST['email_address'])) {
-header( "Location: $feedback_page" );
+header( "Location: $index" );
 }
 
 // If the form fields are empty, redirect to the error page.
